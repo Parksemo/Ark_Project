@@ -238,6 +238,7 @@ for train_idx,valid_idx in skf.split(trainp,train['Y_Class']):
 
 print(f'검증 데이터를 통한 평균 RMSE :{best_score_r}')
 ```
+![alt text](image-14.png)
 <br>
 
 ### CatBoostClassifier (Y_Class로 Classification)
@@ -272,3 +273,19 @@ for train_idx,valid_idx in skf.split(trainp,train['Y_Class']):
 
 print(f'검증 데이터를 통한 평균 정확도 :{best_score_c*100:.2f}%')
 ```
+![alt text](image-15.png)
+<br>
+
+## 평가 및 비교 (Regression vs Classification)
+![alt text](image-16.png)
+<br>
+
+```python
+## regression vs classification
+result_df = pd.DataFrame(result_cbc,columns=['0_class','1_class','2_class']) #제품 품질 상태(Target)
+result_df['quality'] = result_quality #CatBoostRegressor (Y_Quality로 Regression)
+result_df['quality_label'] = result_df['quality'].apply(lambda x: 0 if x <0.525066667 else 2 if x>0.534950794 else 1)
+result_df['class_label'] = result_cbc.argmax(1) #CatBoostClassifier (Y_Class로 Classification), .argmax(1) : 각 행별로 최대값의 인덱스 출력
+result_df
+```
+![alt text](image-17.png)
