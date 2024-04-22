@@ -13,6 +13,8 @@
 - LG에서는 제조 지능화를 통해 공정 과정에서 발생하는 이벤트에 신속하게 대응하고, 안정성과 효율을 극대화하기 위한 방안을 지속적으로 도모하고 있습니다.
 - 품질 편차를 최소화해 생산 경제성과 안정성을 확보할 수 있도록 생산된 제품이 적정 기준을 충족하는지 판단하고 분류하는 AI 모델을 개발해 주세요.
 
+<br>
+
 ### 데이터 정보
 
 - train.csv [파일]
@@ -45,3 +47,8 @@
 - 'LINE', 'PRODUCT_CODE'는 Train / Test 모두 동일한 종류가 존재합니다.
 
 ![alt text](image-1.png)
+
+<br>
+
+### 데이터 분석 및 학습 (링크)
+- [CatBoost+Optuna를 확용한 품질 상태 분석](https://github.com/Parksemo/Ark_Project/blob/master/%ED%95%99%EC%8A%B5%EB%AA%A8%EB%8D%B8/catboost%20%2B%20optuna/catboost%20%2B%20optuna.md)
