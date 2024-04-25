@@ -50,5 +50,7 @@
 
 <br>
 
-### 데이터 분석 및 학습 (링크)
+### 데이터 분석 및 모델 학습 (링크)
 - [CatBoost+Optuna를 확용한 품질 상태 분석](https://github.com/Parksemo/Ark_Project/blob/master/%ED%95%99%EC%8A%B5%EB%AA%A8%EB%8D%B8/catboost%20%2B%20optuna/catboost%20%2B%20optuna.md)
+
+- [Lgbm+ExtraTree+RF를 활용한 분류모델 앙상블](https://github.com/Parksemo/Ark_Project/blob/master/%ED%95%99%EC%8A%B5%EB%AA%A8%EB%8D%B8/softvotin(lgbm%2Crf%2Cextratree)/Lgbm%2BRf%2BExtraTree.md)
