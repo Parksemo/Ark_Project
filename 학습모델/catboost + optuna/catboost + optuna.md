@@ -16,14 +16,13 @@ from sklearn.preprocessing import LabelEncoder
 #시각화 라이브러리
 import seaborn as sns
 import matplotlib.pyplot as plt
-import matplotlib as mpl
 plt.rcParams['font.family'] ='Malgun Gothic' #한글 깨짐 문제 방지
 plt.rcParams['axes.unicode_minus'] =False
 
 # 옵션 라이브러리
 warnings.filterwarnings('ignore') # warinings 문구 생략 
-pd.set_option('display.max_columns',20) # 열 30개 보여주기
-pd.set_option('display.max_rows',20) #행 30개 보여주기
+pd.set_option('display.max_columns',20) # 열 20개 보여주기
+pd.set_option('display.max_rows',20) #행 20개 보여주기
 
 # 모델 라이브러리
 from sklearn.model_selection import train_test_split # 데이터 분리
